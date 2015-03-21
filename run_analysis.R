@@ -36,7 +36,7 @@ activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
 dataset$activitylabel <- factor(dataset$activity, levels=1:6, labels=activity_labels[[2]])
 
 #group by activity and subject
-dataset_by_activity_subject <- group_by(dataset, activity, subject)
+dataset_by_activity_subject <- group_by(dataset, activitylabel, subject)
 
 #summarize each column and take the mean.
 tidydataset <- summarise_each(dataset_by_activity_subject, funs(mean))
