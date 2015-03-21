@@ -20,3 +20,9 @@ For each record it is provided:
 This project aims at cleaning a dataset that is downloaded from a link and tidying it up. Here is a list of files and their description
   - run_analysis.R: This files contains the R script that works on a directory in the working directory path and tidies up the dataset therein. 
   - CodeBook.MD: This file contains descriptions of the data and the features(variables) that are extracted.
+
+The run_alanysis.R script would work on a data set that is downloaded from the following path: 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+This dataset can be downloaded from R using the ```download.file``` command. The dataset is initially downloaded as a zip file. This file should be unziped and the name should be kept the same. The output of the script would be a tidy dataset as per definitions.
